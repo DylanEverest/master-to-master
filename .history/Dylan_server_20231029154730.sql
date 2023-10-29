@@ -28,8 +28,8 @@ create publication pub_dylan for table session where (server_id ='server_dylan')
 
 
 
-create subscription sub_dylan_server_misa connection 'dbname = clustering host = 192.168.43.8 user = clustering password = clustering ' publication pub_misa ;
+create subscription sub_dylan_server_misa connection 'dbname = clustering host = 192.168.43.8 user = clustering password = clustering ' publication pub_dylan ;
 
-create subscription sub_dylan_server_alain connection 'dbname = clustering host = 192.168.43.250 user = clustering password = clustering ' publication pub_alain ;
+create subscription sub_misa_server_alain connection 'dbname = clustering host = 192.168.43.250 user = clustering password = clustering ' publication pub_alain ;
 
 
