@@ -4,7 +4,5 @@ create subscription sub_server_dylan connection 'dbname = clustering host = 192.
 
 -- publication 
 
-create publication pub_dylan for table session where (server_id ='server_dylan');
-
-
--- subscription to others
+create publication pub_dylan_alain for table session where (server_id ='server_alain');
+create publication pub_dylan_misa for table session where (server_id ='server_misa');
