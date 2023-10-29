@@ -14,11 +14,7 @@ create subscription sub_server_dylan connection 'dbname = clustering host = 192.
 wal_level = logical			
 
 
--- pg_hba.conf ( Alain and Misa)
-TYPE  DATABASE        USER            ADDRESS                 METHOD
 
-host    clustering      clustering    192.168.43.250/24       trust 
-host    clustering      clustering    192.168.43.8/24         trust
 
 
 -- publication 
