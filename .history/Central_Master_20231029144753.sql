@@ -1,6 +1,4 @@
--- ip address: 
-
-192.168.43.133
+-- ip address
 
 -- role and database
 create role clustering replication login password 'clustering';
