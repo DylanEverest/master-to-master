@@ -26,8 +26,3 @@ host    clustering      clustering    192.168.43.23/24        trust
 create publication pub_misa for table session where (server_id ='server_misa');
 
 
-
-
--- subscription
-
-create subscription sub_server_dylan connection 'dbname = clustering host = 192.168.43.23 user = clustering password = clustering ' publication pub_dylan ;

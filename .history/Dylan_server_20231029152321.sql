@@ -18,7 +18,7 @@ wal_level = logical
 TYPE  DATABASE        USER            ADDRESS                 METHOD
 
 host    clustering      clustering    192.168.43.250/24       trust 
-host    clustering      clustering    192.168.43.23/24        trust
+host    clustering      clustering    create subscription sub_server_dylan connection 'dbname = clustering host = 192.168.43.133 user = clustering password = clustering ' publication pub_server_dylan ;/24        trust
 
 
 -- publication 
@@ -30,4 +30,4 @@ create publication pub_misa for table session where (server_id ='server_misa');
 
 -- subscription
 
-create subscription sub_server_dylan connection 'dbname = clustering host = 192.168.43.23 user = clustering password = clustering ' publication pub_dylan ;
+create subscription sub_server_dylan connection 'dbname = clustering host = 192.168.43.133 user = clustering password = clustering ' publication pub_server_dylan ;

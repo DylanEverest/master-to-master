@@ -14,7 +14,7 @@ create subscription sub_server_dylan connection 'dbname = clustering host = 192.
 wal_level = logical			
 
 
--- pg_hba.conf ( Dylan and Alain)
+-- pg_hba.conf ( Dylan and Misa)
 TYPE  DATABASE        USER            ADDRESS                 METHOD
 
 host    clustering      clustering    192.168.43.250/24       trust 
@@ -23,11 +23,6 @@ host    clustering      clustering    192.168.43.23/24        trust
 
 -- publication 
 
-create publication pub_misa for table session where (server_id ='server_misa');
+create publication pub_dylan for table session where (server_id ='server_dylan');
 
 
-
-
--- subscription
-
-create subscription sub_server_dylan connection 'dbname = clustering host = 192.168.43.23 user = clustering password = clustering ' publication pub_dylan ;
