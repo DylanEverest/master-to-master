@@ -1,0 +1,11 @@
+<config> 
+
+    <database>javasession</database>
+
+    <user>postgres</user>
+
+    <password></password>
+
+    <ipaddr>jdbc:postgresql://localhost:5432/</ipaddr>
+
+</config>

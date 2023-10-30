@@ -1,0 +1,4 @@
+-- you can manually delete the slot in Postgres:
+
+
+select pg_drop_replication_slot('debezium');
